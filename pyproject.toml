@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unified-drone-ai"
+version = "0.1.0"
+description = "Unified drone AI framework: RL + Classical Control + Inspection Planning"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Unified Framework Team"}
+]
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "numpy>=2.2,<3.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+]
+rl = [
+    "stable-baselines3>=2.3.0",
+    "gymnasium>=1.0.0",
+]
+viz = [
+    "matplotlib>=3.7",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["unified*"]

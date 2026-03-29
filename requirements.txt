@@ -1,0 +1,22 @@
+# Unified Drone AI Framework
+# Core dependencies (Python 3.11+)
+
+# Numeric / math
+numpy>=2.2,<3.0
+
+# Testing
+pytest>=8.0
+pytest-cov>=4.1
+
+# Optional: RL baseline (stable-baselines3 uses gymnasium + torch)
+# Uncomment if you want RL training capability
+# stable-baselines3>=2.3.0
+# gymnasium>=1.0.0
+
+# Optional: visualization / logging
+# matplotlib>=3.7
+# tensorboard>=2.14
+
+# Note: crazyflow and gym-pybullet-drones should be installed from their repos:
+#   pip install -e /path/to/crazyflow
+#   pip install -e /path/to/gym-pybullet-drones

@@ -6,6 +6,8 @@ Built on the shoulders of:
 - **[crazyflow](https://github.com/utiasDSL/crazyflow)** — JAX-based differentiable drone simulation
 - **[gym-pybullet-drones](https://github.com/utiasDSL/gym-pybullet-drones)** — Gymnasium environments + PID controllers
 
+Made together with [@caglar28](https://github.com/caglar28). 
+
 ---
 
 ## 🎯 Goals
